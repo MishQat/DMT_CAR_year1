@@ -54,8 +54,8 @@ friction_term = (2 * math.pi * mu) * (((mc + mw) * Weight_front * rf * nF) + ((m
 print(f"Calculated friction term: {friction_term:.7f}")
 
 #Calculates the numerator and denominator for V2
-numerator_secondpart = ((mw * x) - (mc * y))
-numerator = 2*g*(numerator_secondpart - friction_term)
+numerator_secondpart = (mw * x) - (mc * y)
+numerator = (2 * g * numerator_secondpart) - friction_term
 denominator = mc + mw
 
 
